@@ -33,8 +33,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String PLAN_FAIL = "fail";
 
     // day attributes
-    public static final String DAY_NAME = "name";   // ini PKnya
-    public static final String DAY_FULLNAME = "fullname";
+    public static final String DAY_ID = "id_day";   // ini PKnya
+    public static final String DAY_NAME_IND = "name_ind";
+    public static final String DAY_NAME_ENG = "name_eng";
 
     // plan_day attribute
     public static final String PLAN_DAY_ID = "id_p_d";
@@ -46,8 +47,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             + PLAN_DETAIL + " VARCHAR (1023), "
             + PLAN_PRIORITY + " VARCHAR (1), "
             + PLAN_FOR + " INTEGER, "
-            + PLAN_START + " TIME, "
-            + PLAN_FINISH + " TIME, "
+            + PLAN_START + " VARCHAR (10), "
+            + PLAN_FINISH + " VARCHAR (10), "
             + PLAN_MOTIVATION + " VARCHAR (1023), "
             + PLAN_ICON + " VARCHAR(255), "
             + PLAN_REWARD + " VARCHAR(1023), "
@@ -58,16 +59,17 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     // create table day
     public static final String CREATE_TABLE_DAY = "CREATE TABLE "
-            + TABLE_DAY + " ( " + DAY_NAME + " VARCHAR(10) PRIMARY KEY, "
-            + DAY_FULLNAME + " VARCHAR(255) " + ")";
+            + TABLE_DAY + " ( " + DAY_ID + " INTEGER PRIMARY KEY, "
+            + DAY_NAME_IND + " VARCHAR(10), "
+            + DAY_NAME_ENG + " VARCHAR(10) " +")";
 
     // create table plan_day
     public static final String CREATE_TABLE_PLAN_DAY = "CREATE TABLE "
             + TABLE_PLAN_DAY + " ( " + PLAN_DAY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
             + PLAN_ID + " INTEGER, "
-            + DAY_NAME + " VARCHAR(10), "
+            + DAY_ID + " INTEGER, "
             + "FOREIGN KEY ( " + PLAN_ID + " ) REFERENCES " + TABLE_PLAN + " ( " + PLAN_ID + " ), "
-            + "FOREIGN KEY ( " + DAY_NAME + " ) REFERENCES " + TABLE_DAY + " ( " + DAY_NAME + " ))";
+            + "FOREIGN KEY ( " + DAY_ID + " ) REFERENCES " + TABLE_DAY + " ( " + DAY_ID + " ))";
 
     private static DataBaseHelper instance;
 

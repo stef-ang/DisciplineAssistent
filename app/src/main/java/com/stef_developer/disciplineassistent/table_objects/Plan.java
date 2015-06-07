@@ -16,8 +16,8 @@ public class Plan implements Parcelable {
     private String detail;
     private String priority;
     private int for_periode;
-    private Time start;
-    private Time finish;
+    private String start;
+    private String finish;
     private String motivation;
     private String icon;
     private String reward;
@@ -42,8 +42,8 @@ public class Plan implements Parcelable {
         this.detail = in.readString();
         this.priority = in.readString();
         this.for_periode = in.readInt();
-        this.start = new Time(in.readLong());
-        this.finish = new Time(in.readLong());
+        this.start = in.readString();
+        this.finish = in.readString();
         this.motivation = in.readString();
         this.icon = in.readString();
         this.reward = in.readString();
@@ -93,19 +93,19 @@ public class Plan implements Parcelable {
         this.for_periode = for_periode;
     }
 
-    public Time getStart() {
+    public String getStart() {
         return start;
     }
 
-    public void setStart(Time start) {
+    public void setStart(String start) {
         this.start = start;
     }
 
-    public Time getFinish() {
+    public String getFinish() {
         return finish;
     }
 
-    public void setFinish(Time finish) {
+    public void setFinish(String finish) {
         this.finish = finish;
     }
 
@@ -182,8 +182,8 @@ public class Plan implements Parcelable {
         dest.writeString(getDetail());
         dest.writeString(getPriority());
         dest.writeInt(getFor_periode());
-        dest.writeLong(getStart().getTime());
-        dest.writeLong(getFinish().getTime());
+        dest.writeString(getStart());
+        dest.writeString(getFinish());
         dest.writeString(getMotivation());
         dest.writeString(getIcon());
         dest.writeString(getReward());

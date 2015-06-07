@@ -10,26 +10,26 @@ public class Plan_Day implements Parcelable {
 
     private int id_p_d;
     private int id_plan;
-    private String name_day;
+    private int id_day;
 
-    public Plan_Day(int id_p_d, int id_plan, String name_day) {
+    public Plan_Day(int id_p_d, int id_plan, int day_id) {
         super();
         this.id_p_d = id_p_d;
         this.id_plan = id_plan;
-        this.name_day = name_day;
+        this.id_day = day_id;
     }
 
-    public Plan_Day(int id_plan, String name_day) {
+    public Plan_Day(int id_plan, int day_id) {
         super();
         this.id_plan = id_plan;
-        this.name_day = name_day;
+        this.id_day = day_id;
     }
 
     public Plan_Day(Parcel in) {
         super();
         this.id_p_d = in.readInt();
         this.id_plan = in.readInt();
-        this.name_day = in.readString();
+        this.id_day = in.readInt();
     }
 
     public int getId_p_d() {
@@ -48,12 +48,12 @@ public class Plan_Day implements Parcelable {
         this.id_plan = id_plan;
     }
 
-    public String getName_day() {
-        return name_day;
+    public int getId_day() {
+        return id_day;
     }
 
-    public void setName_day(String name_day) {
-        this.name_day = name_day;
+    public void setId_day(int id_day) {
+        this.id_day = id_day;
     }
 
     @Override
@@ -70,7 +70,7 @@ public class Plan_Day implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(getId_p_d());
         dest.writeInt(getId_plan());
-        dest.writeString(getName_day());
+        dest.writeInt(getId_day());
     }
 
     public static final Creator<Plan_Day> CREATOR = new Creator<Plan_Day>() {

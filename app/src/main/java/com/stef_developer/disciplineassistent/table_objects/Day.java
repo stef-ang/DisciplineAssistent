@@ -8,35 +8,46 @@ import android.os.Parcelable;
  */
 public class Day implements Parcelable {
 
-    private String name;
-    private String fullname;
+    private int id_day;
+    private String name_ind;
+    private String name_eng;
 
-    public Day (String name, String fullname) {
+    public Day(int id_day, String name_ind, String name_eng) {
         super();
-        this.name = name;
-        this.fullname = fullname;
+        this.id_day = id_day;
+        this.name_ind = name_ind;
+        this.name_eng = name_eng;
     }
 
     public Day (Parcel in) {
         super();
-        this.name = in.readString();
-        this.fullname = in.readString();
+        this.id_day = in.readInt();
+        this.name_ind = in.readString();
+        this.name_eng = in.readString();
     }
 
-    public String getName() {
-        return name;
+    public int getId_day() {
+        return id_day;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId_day(int id_day) {
+        this.id_day = id_day;
     }
 
-    public String getFullname() {
-        return fullname;
+    public String getName_ind() {
+        return name_ind;
     }
 
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
+    public void setName_ind(String name_ind) {
+        this.name_ind = name_ind;
+    }
+
+    public String getName_eng() {
+        return name_eng;
+    }
+
+    public void setName_eng(String name_eng) {
+        this.name_eng = name_eng;
     }
 
     @Override
@@ -51,8 +62,9 @@ public class Day implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(getName());
-        dest.writeString(getFullname());
+        dest.writeInt(getId_day());
+        dest.writeString(getName_ind());
+        dest.writeString(getName_eng());
     }
 
     public static final Creator<Day> CREATOR = new Creator<Day>() {
@@ -76,7 +88,7 @@ public class Day implements Parcelable {
         if (getClass() != o.getClass())
             return false;
         Day other = (Day) o;
-        if(name != other.name)
+        if(id_day != other.id_day)
             return false;
         return true;
     }
