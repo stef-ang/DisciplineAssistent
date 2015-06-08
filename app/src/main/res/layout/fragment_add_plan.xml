@@ -50,32 +50,181 @@
                 android:layout_width="0dp"
                 android:layout_height="@dimen/priority_icon"
                 android:layout_weight="1"
-                android:src="@drawable/p1"/>
+                android:src="@drawable/p1"
+                android:onClick="click_pic"/>
             <ImageView
                 android:id="@+id/ic_p2"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/priority_icon"
                 android:layout_weight="1"
-                android:src="@drawable/p2"/>
+                android:src="@drawable/p2"
+                android:onClick="click_pic"/>
             <ImageView
                 android:id="@+id/ic_p3"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/priority_icon"
                 android:layout_weight="1"
-                android:src="@drawable/p3"/>
+                android:src="@drawable/p3"
+                android:onClick="click_pic"/>
             <ImageView
                 android:id="@+id/ic_p4"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/priority_icon"
                 android:layout_weight="1"
-                android:src="@drawable/p4"/>
+                android:src="@drawable/p4"
+                android:onClick="click_pic"/>
             <ImageView
                 android:id="@+id/ic_p5"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/priority_icon"
                 android:layout_weight="1"
-                android:src="@drawable/p5"/>
+                android:src="@drawable/p5"
+                android:onClick="click_pic"/>
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_day"
+            android:textSize="@dimen/fontsize_normal"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/ll_priority"
+            android:layout_marginLeft="@dimen/margin_left_font_normal"
+            android:layout_marginTop="@dimen/margin_top_view_add_plan"/>
+        <LinearLayout
+            android:id="@+id/ll_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_day"
+            android:layout_marginTop="@dimen/margin_top_view_add_plan">
+            <ImageView
+                android:id="@+id/ic_d1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/day_icon"
+                android:layout_weight="1"
+                android:src="@drawable/d0"
+                android:onClick="click_dic"/>
+            <ImageView
+                android:id="@+id/ic_d2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/day_icon"
+                android:layout_weight="1"
+                android:src="@drawable/d1"
+                android:onClick="click_dic"/>
+            <ImageView
+                android:id="@+id/ic_d3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/day_icon"
+                android:layout_weight="1"
+                android:src="@drawable/d2"
+                android:onClick="click_dic"/>
+            <ImageView
+                android:id="@+id/ic_d4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/day_icon"
+                android:layout_weight="1"
+                android:src="@drawable/d3"
+                android:onClick="click_dic"/>
+            <ImageView
+                android:id="@+id/ic_d5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/day_icon"
+                android:layout_weight="1"
+                android:src="@drawable/d4"
+                android:onClick="click_dic"/>
+            <ImageView
+                android:id="@+id/ic_d6"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/day_icon"
+                android:layout_weight="1"
+                android:src="@drawable/d5"
+                android:onClick="click_dic"/>
+            <ImageView
+                android:id="@+id/ic_d7"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/day_icon"
+                android:layout_weight="1"
+                android:src="@drawable/d6"
+                android:onClick="click_dic"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_for"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_for"
+            android:textSize="@dimen/fontsize_normal"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/ll_day"
+            android:layout_marginLeft="@dimen/margin_left_font_normal"
+            android:layout_marginTop="@dimen/margin_top_view_add_plan2"/>
+        <EditText
+            android:id="@+id/et_for_numb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="3"
+            android:gravity="center_horizontal"
+            android:layout_alignBaseline="@id/tv_for"
+            android:layout_toRightOf="@id/tv_for"
+            android:layout_marginLeft="@dimen/margin_lr_for_numb"
+            android:layout_marginRight="@dimen/margin_lr_for_numb"/>
+        <TextView
+            android:id="@+id/tv_events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_events"
+            android:textSize="@dimen/fontsize_normal"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@id/et_for_numb"
+            android:layout_toRightOf="@id/et_for_numb"/>
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_start"
+            android:textSize="@dimen/fontsize_normal"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tv_for"
+            android:layout_marginLeft="@dimen/margin_left_font_normal"
+            android:layout_marginTop="@dimen/margin_top_view_add_plan2"/>
+        <EditText
+            android:id="@+id/et_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fontsize_normal"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:drawableRight="@drawable/ic_clock"
+            android:layout_alignBaseline="@id/tv_start"
+            android:layout_toRightOf="@id/tv_start"/>
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_finish"
+            android:textSize="@dimen/fontsize_normal"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tv_start"
+            android:layout_marginLeft="@dimen/margin_left_font_normal"
+            android:layout_marginTop="@dimen/margin_top_view_add_plan2"/>
+        <EditText
+            android:id="@+id/et_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fontsize_normal"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:drawableRight="@drawable/ic_clock"
+            android:layout_alignBaseline="@id/tv_finish"
+            android:layout_toRightOf="@id/tv_finish"/>
     </RelativeLayout>
 </ScrollView>
+
+
+
 </RelativeLayout>

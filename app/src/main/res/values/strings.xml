@@ -8,4 +8,9 @@
 
     <string name="hint_plan_title">Plan Title</string>
     <string name="tv_priority">Priority :</string>
+    <string name="tv_day">Repeat :</string>
+    <string name="tv_for">For : </string>
+    <string name="tv_events"> events</string>
+    <string name="tv_start">Time Start : </string>
+    <string name="tv_finish">Time Finish : </string>
 </resources>

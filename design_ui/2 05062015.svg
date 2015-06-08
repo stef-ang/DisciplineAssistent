@@ -337,9 +337,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.08838835"
-     inkscape:cx="3792.8068"
-     inkscape:cy="-182.24355"
+     inkscape:zoom="0.50000001"
+     inkscape:cx="5758.6127"
+     inkscape:cy="-1106.321"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1603,159 +1603,173 @@
        inkscape:export-xdpi="91"
        inkscape:export-ydpi="91" />
     <circle
-       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:4;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:2.49877644;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
        id="path5834-4-6-7-7-09-44"
-       cx="5179.5776"
-       cy="2184.8376"
-       r="78.039177"
+       cx="5149.5386"
+       cy="2214.8767"
+       r="48.75061"
        inkscape:export-xdpi="91"
-       inkscape:export-ydpi="91" />
+       inkscape:export-ydpi="91"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d0_selected.png" />
     <circle
-       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:4;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:2.49877644;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
        id="path5834-4-6-7-7-09-7-2"
-       cx="5380.438"
-       cy="2184.8376"
-       r="78.039177"
+       cx="5350.3989"
+       cy="2214.8767"
+       r="48.75061"
        inkscape:export-xdpi="91"
-       inkscape:export-ydpi="91" />
+       inkscape:export-ydpi="91"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d1_selected.png" />
     <circle
-       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:4;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:2.49877644;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
        id="path5834-4-6-7-7-09-9-7"
-       cx="6183.8794"
-       cy="2184.8376"
-       r="78.039177"
+       cx="6153.8403"
+       cy="2214.8767"
+       r="48.75061"
        inkscape:export-xdpi="91"
-       inkscape:export-ydpi="91" />
+       inkscape:export-ydpi="91"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d5_selected.png" />
     <circle
-       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:4;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:2.49877644;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
        id="path5834-4-6-7-7-09-5-4"
-       cx="5983.019"
-       cy="2184.8376"
-       r="78.039177"
+       cx="5952.98"
+       cy="2214.8767"
+       r="48.75061"
        inkscape:export-xdpi="91"
-       inkscape:export-ydpi="91" />
+       inkscape:export-ydpi="91"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d4_selected.png" />
     <circle
-       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:4;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:2.49877644;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
        id="path5834-4-6-7-7-09-4-4"
-       cx="5782.1587"
-       cy="2184.8376"
-       r="78.039177"
+       cx="5752.1196"
+       cy="2214.8767"
+       r="48.75061"
        inkscape:export-xdpi="91"
-       inkscape:export-ydpi="91" />
+       inkscape:export-ydpi="91"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d3_selected.png" />
     <circle
-       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:4;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:2.49877644;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
        id="path5834-4-6-7-7-09-72-2"
-       cx="5581.2983"
-       cy="2184.8376"
-       r="78.039177"
+       cx="5551.2593"
+       cy="2214.8767"
+       r="48.75061"
        inkscape:export-xdpi="91"
-       inkscape:export-ydpi="91" />
+       inkscape:export-ydpi="91"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d2_selected.png" />
     <circle
-       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:4;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:2.49877644;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
        id="path5834-4-6-7-7-09-2-3"
-       cx="6384.7397"
-       cy="2184.8376"
-       r="78.039177"
+       cx="6354.7007"
+       cy="2214.8767"
+       r="48.75061"
        inkscape:export-xdpi="91"
-       inkscape:export-ydpi="91" />
+       inkscape:export-ydpi="91"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d6_selected.png" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="5119.5649"
-       y="2205.231"
+       style="font-style:normal;font-weight:normal;font-size:31.23470306px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5112.0488"
+       y="2227.6165"
        id="text6704-26"
        sodipodi:linespacing="125%"
        inkscape:export-xdpi="91"
-       inkscape:export-ydpi="91"><tspan
+       inkscape:export-ydpi="91"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d0_selected.png"><tspan
          sodipodi:role="line"
          id="tspan6706-4"
-         x="5119.5649"
-         y="2205.231"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.25px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;">SUN</tspan></text>
+         x="5112.0488"
+         y="2227.6165"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.1390419px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff">SUN</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="6329.0391"
-       y="2205.2859"
+       style="font-style:normal;font-weight:normal;font-size:31.23470306px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="6319.9048"
+       y="2227.6506"
        id="text6704-63-8"
        sodipodi:linespacing="125%"
        inkscape:export-xdpi="91"
-       inkscape:export-ydpi="91"><tspan
+       inkscape:export-ydpi="91"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d6_selected.png"><tspan
          sodipodi:role="line"
          id="tspan6706-6-3"
-         x="6329.0391"
-         y="2205.2859"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.25px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;">SAT</tspan></text>
+         x="6319.9048"
+         y="2227.6506"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.1390419px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff">SAT</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="6135.4707"
-       y="2205.2859"
+       style="font-style:normal;font-weight:normal;font-size:31.23470306px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="6123.5996"
+       y="2227.6506"
        id="text6704-2-0"
        sodipodi:linespacing="125%"
        inkscape:export-xdpi="91"
-       inkscape:export-ydpi="91"><tspan
+       inkscape:export-ydpi="91"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d5_selected.png"><tspan
          sodipodi:role="line"
          id="tspan6706-2-9"
-         x="6135.4707"
-         y="2205.2859"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.25px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;">FRI</tspan></text>
+         x="6123.5996"
+         y="2227.6506"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.1390419px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff">FRI</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="5926.3706"
-       y="2204.8604"
+       style="font-style:normal;font-weight:normal;font-size:31.23470306px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5917.5918"
+       y="2227.385"
        id="text6704-9-7"
        sodipodi:linespacing="125%"
        inkscape:export-xdpi="91"
-       inkscape:export-ydpi="91"><tspan
+       inkscape:export-ydpi="91"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d4_selected.png"><tspan
          sodipodi:role="line"
          id="tspan6706-0-0"
-         x="5926.3706"
-         y="2204.8604"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.25px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;">THU</tspan></text>
+         x="5917.5918"
+         y="2227.385"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.1390419px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff">THU</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="5715.2793"
-       y="2205.2859"
+       style="font-style:normal;font-weight:normal;font-size:31.23470306px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5710.3403"
+       y="2227.6506"
        id="text6704-3-3"
        sodipodi:linespacing="125%"
        inkscape:export-xdpi="91"
-       inkscape:export-ydpi="91"><tspan
+       inkscape:export-ydpi="91"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d3_selected.png"><tspan
          sodipodi:role="line"
          id="tspan6706-9-3"
-         x="5715.2793"
-         y="2205.2859"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.25px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;">WED</tspan></text>
+         x="5710.3403"
+         y="2227.6506"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.1390419px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff">WED</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="5527.1221"
-       y="2204.8604"
+       style="font-style:normal;font-weight:normal;font-size:31.23470306px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5517.4155"
+       y="2227.385"
        id="text6704-0-7"
        sodipodi:linespacing="125%"
        inkscape:export-xdpi="91"
-       inkscape:export-ydpi="91"><tspan
+       inkscape:export-ydpi="91"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d2_selected.png"><tspan
          sodipodi:role="line"
          id="tspan6706-97-3"
-         x="5527.1221"
-         y="2204.8604"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.25px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;">TUE</tspan></text>
+         x="5517.4155"
+         y="2227.385"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.1390419px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff">TUE</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="5313.4766"
-       y="2205.2859"
+       style="font-style:normal;font-weight:normal;font-size:31.23470306px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5308.5684"
+       y="2227.6506"
        id="text6704-8-1"
        sodipodi:linespacing="125%"
        inkscape:export-xdpi="91"
-       inkscape:export-ydpi="91"><tspan
+       inkscape:export-ydpi="91"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d1_selected.png"><tspan
          sodipodi:role="line"
          id="tspan6706-1-4"
-         x="5313.4766"
-         y="2205.2859"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.25px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;">MON</tspan></text>
+         x="5308.5684"
+         y="2227.6506"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.1390419px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff">MON</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:80px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -5249,5 +5263,519 @@
        width="40"
        inkscape:export-xdpi="91"
        inkscape:export-ydpi="91" />
+    <g
+       id="g5359"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\priority\p1_selected.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91">
+      <circle
+         r="50"
+         cy="3214.5784"
+         cx="5530.0249"
+         id="path5834-6"
+         style="fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.31932893;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5911-8"
+         y="3233.2615"
+         x="5510.9287"
+         style="font-style:normal;font-weight:normal;font-size:25.62815475px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.25630951px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;"
+           y="3233.2615"
+           x="5510.9287"
+           id="tspan5913-8"
+           sodipodi:role="line">1</tspan></text>
+    </g>
+    <g
+       id="g5364"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\priority\p2_selected.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91">
+      <circle
+         r="50"
+         cy="3214.5784"
+         cx="5690.6738"
+         id="path5834-4-86"
+         style="fill:#4f9f00;fill-opacity:1;stroke:none;stroke-width:0.31932893;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5911-4-6"
+         y="3233.5742"
+         x="5671.415"
+         style="font-style:normal;font-weight:normal;font-size:25.62815475px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.25630951px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;"
+           y="3233.5742"
+           x="5671.415"
+           id="tspan5913-5-3"
+           sodipodi:role="line">2</tspan></text>
+    </g>
+    <g
+       id="g5369"
+       transform="translate(4.8828125e-4,0)"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\priority\p3_selected.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91">
+      <circle
+         r="50"
+         cy="3214.5784"
+         cx="5851.3223"
+         id="path5834-4-6-96"
+         style="fill:#bfbf00;fill-opacity:1;stroke:none;stroke-width:0.31932893;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         style="fill:#ffffff;stroke:none;stroke-width:0.31215671;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="matrix(0.64070386,0,0,0.64070386,2060.0433,2044.9771)"
+         id="g6011-2">
+        <g
+           style="fill:#ffffff;stroke:none;stroke-width:0.31215671;stroke-miterlimit:4;stroke-dasharray:none"
+           id="g6007-2">
+          <text
+             sodipodi:linespacing="125%"
+             id="text5911-4-1-6"
+             y="1854.5765"
+             x="5888.9482"
+             style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.31215671;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:80px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:0.31215671;stroke-miterlimit:4;stroke-dasharray:none"
+               y="1854.5765"
+               x="5888.9482"
+               id="tspan5913-5-1-5"
+               sodipodi:role="line">3</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g5376"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\priority\p4_selected.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91">
+      <circle
+         r="50"
+         cy="3214.5784"
+         cx="6011.9717"
+         id="path5834-4-6-7-3"
+         style="fill:#df6f00;fill-opacity:1;stroke:none;stroke-width:0.31932893;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5911-4-1-3-2"
+         y="3233.1614"
+         x="5993.7144"
+         style="font-style:normal;font-weight:normal;font-size:25.62815475px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.25630951px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none"
+           y="3233.1614"
+           x="5993.7144"
+           id="tspan5913-5-1-0-84"
+           sodipodi:role="line">4</tspan></text>
+    </g>
+    <g
+       id="g5381"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\priority\p5_selected.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91">
+      <circle
+         r="50"
+         cy="3214.5784"
+         cx="6172.6206"
+         id="path5834-4-6-7-7-9"
+         style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.31932893;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         inkscape:transform-center-x="-0.00014612865"
+         inkscape:transform-center-y="7.7246657"
+         sodipodi:linespacing="125%"
+         id="text5911-4-1-3-3-9"
+         y="3232.8235"
+         x="6154.0254"
+         style="font-style:normal;font-weight:normal;font-size:25.62815475px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.25630951px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;"
+           y="3232.8235"
+           x="6154.0254"
+           id="tspan5913-5-1-0-5-5"
+           sodipodi:role="line">5</tspan></text>
+    </g>
+    <g
+       id="g5386"
+       transform="translate(0,7.9675293)"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\priority\p1.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91">
+      <circle
+         r="44.627541"
+         cy="3373.3945"
+         cx="5526.9014"
+         id="path5834-6-0"
+         style="fill:none;fill-opacity:1;stroke:#008000;stroke-width:10.74492073;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5911-8-4"
+         y="3392.0752"
+         x="5507.8076"
+         style="font-style:normal;font-weight:normal;font-size:22.8744297px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.25px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#008000;stroke:none"
+           y="3392.0752"
+           x="5507.8076"
+           id="tspan5913-8-1"
+           sodipodi:role="line">1</tspan></text>
+    </g>
+    <circle
+       style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.31932893;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       id="path5834-6-4"
+       cx="5530.7173"
+       cy="3083.1729"
+       r="50" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:25.62815475px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5511.6211"
+       y="3101.856"
+       id="text5911-8-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5913-8-2"
+         x="5511.6211"
+         y="3101.856"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.25630951px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">1</tspan></text>
+    <circle
+       style="fill:#99ff00;fill-opacity:1;stroke:none;stroke-width:0.31932893;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       id="path5834-4-86-0"
+       cx="5691.3662"
+       cy="3083.1729"
+       r="50" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:25.62815475px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5672.1074"
+       y="3102.1687"
+       id="text5911-4-6-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5913-5-3-6"
+         x="5672.1074"
+         y="3102.1687"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.25630951px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">2</tspan></text>
+    <circle
+       style="fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.31932893;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       id="path5834-4-6-96-74"
+       cx="5852.0146"
+       cy="3083.1729"
+       r="50" />
+    <g
+       id="g6011-2-5"
+       transform="matrix(0.64070386,0,0,0.64070386,2060.7361,1913.5716)">
+      <g
+         id="g6007-2-6">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="5888.9482"
+           y="1854.5765"
+           id="text5911-4-1-6-63"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan5913-5-1-5-8"
+             x="5888.9482"
+             y="1854.5765"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:80px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">3</tspan></text>
+      </g>
+    </g>
+    <circle
+       style="fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:0.31932893;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       id="path5834-4-6-7-3-7"
+       cx="6012.6641"
+       cy="3083.1729"
+       r="50" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:25.62815475px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5994.4058"
+       y="3101.7559"
+       id="text5911-4-1-3-2-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5913-5-1-0-84-40"
+         x="5994.4058"
+         y="3101.7559"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.25630951px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">4</tspan></text>
+    <circle
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.31932893;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       id="path5834-4-6-7-7-9-1"
+       cx="6173.313"
+       cy="3083.1729"
+       r="50" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:25.62815475px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="6154.7178"
+       y="3101.418"
+       id="text5911-4-1-3-3-9-4"
+       sodipodi:linespacing="125%"
+       inkscape:transform-center-y="7.7246657"
+       inkscape:transform-center-x="-0.00014612865"><tspan
+         sodipodi:role="line"
+         id="tspan5913-5-1-0-5-5-7"
+         x="6154.7178"
+         y="3101.418"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.25630951px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">5</tspan></text>
+    <g
+       id="g5391"
+       transform="translate(-6.5407715,7.9616699)"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\priority\p2.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91">
+      <circle
+         r="44.627541"
+         cy="3373.4004"
+         cx="5686.9668"
+         id="path5834-6-0-5"
+         style="fill:none;fill-opacity:1;stroke:#4f9f00;stroke-width:10.74492073;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5911-8-4-3"
+         y="3392.394"
+         x="5667.7104"
+         style="font-style:normal;font-weight:normal;font-size:22.8744297px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#4f9f00;fill-opacity:1;stroke:#4f9f00;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.25px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#4f9f00;fill-opacity:1;stroke:#4f9f00;stroke-opacity:1"
+           y="3392.394"
+           x="5667.7104"
+           id="tspan5913-8-1-1"
+           sodipodi:role="line">2</tspan></text>
+    </g>
+    <g
+       id="g5396"
+       transform="translate(3.9506836,4)"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91">
+      <circle
+         r="44.627541"
+         cy="3377.3621"
+         cx="5830"
+         id="path5834-6-0-5-2"
+         style="fill:none;fill-opacity:1;stroke:#bfbf00;stroke-width:10.74492073;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5911-8-4-3-2"
+         y="3395.9927"
+         x="5811.7949"
+         style="font-style:normal;font-weight:normal;font-size:22.8744297px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#bfbf00;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.25px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#bfbf00;fill-opacity:1;stroke:none;stroke-opacity:1"
+           y="3395.9927"
+           x="5811.7949"
+           id="tspan5913-8-1-1-7"
+           sodipodi:role="line">3</tspan></text>
+    </g>
+    <g
+       id="g5401"
+       transform="translate(-10.524658,1)"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91">
+      <circle
+         r="44.627541"
+         cy="3380.3621"
+         cx="5998"
+         id="path5834-6-0-5-2-5"
+         style="fill:none;fill-opacity:1;stroke:#df6f00;stroke-width:10.74492073;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5911-8-4-3-2-8"
+         y="3398.9426"
+         x="5979.7446"
+         style="font-style:normal;font-weight:normal;font-size:22.8744297px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#df6f00;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.25px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#df6f00;fill-opacity:1;stroke:none;stroke-opacity:1"
+           y="3398.9426"
+           x="5979.7446"
+           id="tspan5913-8-1-1-7-2"
+           sodipodi:role="line">4</tspan></text>
+    </g>
+    <g
+       id="g5406"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91">
+      <circle
+         r="44.627541"
+         cy="3381.3621"
+         cx="6141"
+         id="path5834-6-0-5-2-5-4"
+         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:10.74492073;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5911-8-4-3-2-8-9"
+         y="3399.605"
+         x="6122.4067"
+         style="font-style:normal;font-weight:normal;font-size:22.8744297px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.25px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ff0000;fill-opacity:1;stroke:none;stroke-opacity:1"
+           y="3399.605"
+           x="6122.4067"
+           id="tspan5913-8-1-1-7-2-6"
+           sodipodi:role="line">5</tspan></text>
+    </g>
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:2.49877644;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       id="path5834-4-6-7-7-09-53"
+       cx="5154.3418"
+       cy="2434.3894"
+       r="48.75061"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d0.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:2.49877644;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       id="path5834-4-6-7-7-09-7-9"
+       cx="5355.2021"
+       cy="2434.3894"
+       r="48.75061"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d1.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:2.49877644;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       id="path5834-4-6-7-7-09-9-2"
+       cx="6007.8755"
+       cy="2434.3894"
+       r="48.75061"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:2.49877644;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       id="path5834-4-6-7-7-09-5-21"
+       cx="5882.3989"
+       cy="2434.3894"
+       r="48.75061"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:2.49877644;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       id="path5834-4-6-7-7-09-4-8"
+       cx="5756.9229"
+       cy="2434.3894"
+       r="48.75061"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d3.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:2.49877644;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       id="path5834-4-6-7-7-09-72-28"
+       cx="5556.0625"
+       cy="2434.3894"
+       r="48.75061"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d2.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:2.49877644;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+       id="path5834-4-6-7-7-09-2-5"
+       cx="6133.3516"
+       cy="2434.3894"
+       r="48.75061"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:31.23470306px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5116.8521"
+       y="2447.1289"
+       id="text6704-08"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d0.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91"><tspan
+         sodipodi:role="line"
+         id="tspan6706-8"
+         x="5116.8521"
+         y="2447.1289"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.1390419px;font-family:sans-serif;-inkscape-font-specification:sans-serif">SUN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:31.23470306px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="6098.5557"
+       y="2447.1633"
+       id="text6704-63-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91"><tspan
+         sodipodi:role="line"
+         id="tspan6706-6-8"
+         x="6098.5557"
+         y="2447.1633"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.1390419px;font-family:sans-serif;-inkscape-font-specification:sans-serif">SAT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:31.23470306px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5977.6348"
+       y="2447.1633"
+       id="text6704-2-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91"><tspan
+         sodipodi:role="line"
+         id="tspan6706-2-8"
+         x="5977.6348"
+         y="2447.1633"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.1390419px;font-family:sans-serif;-inkscape-font-specification:sans-serif">FRI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:31.23470306px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5847.0112"
+       y="2446.8977"
+       id="text6704-9-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91"><tspan
+         sodipodi:role="line"
+         id="tspan6706-0-1"
+         x="5847.0112"
+         y="2446.8977"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.1390419px;font-family:sans-serif;-inkscape-font-specification:sans-serif">THU</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:31.23470306px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5715.1436"
+       y="2447.1633"
+       id="text6704-3-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d3.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91"><tspan
+         sodipodi:role="line"
+         id="tspan6706-9-53"
+         x="5715.1436"
+         y="2447.1633"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.1390419px;font-family:sans-serif;-inkscape-font-specification:sans-serif">WED</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:31.23470306px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5522.2188"
+       y="2446.8977"
+       id="text6704-0-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d2.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91"><tspan
+         sodipodi:role="line"
+         id="tspan6706-97-0"
+         x="5522.2188"
+         y="2446.8977"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.1390419px;font-family:sans-serif;-inkscape-font-specification:sans-serif">TUE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:31.23470306px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5313.3716"
+       y="2447.1633"
+       id="text6704-8-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Android_Development\DisciplineAssistent\design_ui\day_icon\d1.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91"><tspan
+         sodipodi:role="line"
+         id="tspan6706-1-52"
+         x="5313.3716"
+         y="2447.1633"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.1390419px;font-family:sans-serif;-inkscape-font-specification:sans-serif">MON</tspan></text>
   </g>
 </svg>
