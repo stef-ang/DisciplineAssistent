@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
             android:layout_below="@+id/et_plan_title"
-            android:hint="Details"/>
+            android:hint="@string/hint_detail"/>
         <TextView
             android:id="@+id/tv_priority"
             android:layout_width="wrap_content"
@@ -181,50 +181,101 @@
             android:layout_alignBaseline="@id/et_for_numb"
             android:layout_toRightOf="@id/et_for_numb"/>
 
-        <TextView
-            android:id="@+id/tv_start"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tv_start"
-            android:textSize="@dimen/fontsize_normal"
-            android:textColor="@android:color/black"
+            android:orientation="horizontal"
             android:layout_below="@id/tv_for"
             android:layout_marginLeft="@dimen/margin_left_font_normal"
-            android:layout_marginTop="@dimen/margin_top_view_add_plan2"/>
-        <EditText
-            android:id="@+id/et_start"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/fontsize_normal"
-            android:textStyle="bold"
-            android:gravity="right"
-            android:drawableRight="@drawable/ic_clock"
-            android:layout_alignBaseline="@id/tv_start"
-            android:layout_toRightOf="@id/tv_start"/>
+            android:layout_marginTop="@dimen/margin_top_view_add_plan">
+            <LinearLayout
+                android:id="@+id/ll_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_start"
+                    android:textSize="@dimen/fontsize_normal"
+                    android:textColor="@android:color/black" />
+                <EditText
+                    android:id="@+id/et_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/fontsize_normal"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:drawableRight="@drawable/ic_clock"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_finish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_finish"
+                    android:textSize="@dimen/fontsize_normal"
+                    android:textColor="@android:color/black" />
+                <EditText
+                    android:id="@+id/et_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/fontsize_normal"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:drawableRight="@drawable/ic_clock"/>
+            </LinearLayout>
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/tv_finish"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tv_finish"
-            android:textSize="@dimen/fontsize_normal"
-            android:textColor="@android:color/black"
-            android:layout_below="@id/tv_start"
-            android:layout_marginLeft="@dimen/margin_left_font_normal"
-            android:layout_marginTop="@dimen/margin_top_view_add_plan2"/>
         <EditText
-            android:id="@+id/et_finish"
+            android:id="@+id/et_motivation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/fontsize_normal"
-            android:textStyle="bold"
-            android:gravity="right"
-            android:drawableRight="@drawable/ic_clock"
-            android:layout_alignBaseline="@id/tv_finish"
-            android:layout_toRightOf="@id/tv_finish"/>
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/ll_time"
+            android:hint="@string/hint_motivation"/>
+
+        <LinearLayout
+            android:id="@+id/ll_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_motivation"
+            android:layout_marginLeft="@dimen/margin_left_font_normal"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_icon"
+                android:textSize="@dimen/fontsize_normal"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_vertical"
+                />
+            <ImageView
+                android:id="@+id/img_add_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_ic"
+                android:src="@drawable/add_ic"
+                android:onClick="click_add_ic"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_reward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/ll_icon"
+            android:hint="@string/hint_reward"
+            android:layout_marginTop="@dimen/margin_top_view_add_plan"/>
     </RelativeLayout>
 </ScrollView>
-
-
-
 </RelativeLayout>

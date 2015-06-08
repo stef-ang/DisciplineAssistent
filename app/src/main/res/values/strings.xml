@@ -7,10 +7,14 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="hint_plan_title">Plan Title</string>
+    <string name="hint_detail">Details</string>
+    <string name="hint_motivation">Motivation</string>
+    <string name="hint_reward">Reward</string>
     <string name="tv_priority">Priority :</string>
     <string name="tv_day">Repeat :</string>
     <string name="tv_for">For : </string>
     <string name="tv_events"> events</string>
-    <string name="tv_start">Time Start : </string>
-    <string name="tv_finish">Time Finish : </string>
+    <string name="tv_start">From :</string>
+    <string name="tv_finish">Until :</string>
+    <string name="tv_icon">Icon : </string>
 </resources>
