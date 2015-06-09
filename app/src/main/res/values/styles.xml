@@ -9,7 +9,7 @@
         <item name="actionBarStyle">@style/MyActionBar</item>
 
         <item name="android:actionOverflowButtonStyle">@style/MyOverflow</item>
-        <!--<item name="actionOverflowButtonStyle">@style/MyOverflow</item>-->
+        <item name="actionOverflowButtonStyle">@style/MyOverflow</item>
     </style>
 
     <!-- ActionBar styles -->
