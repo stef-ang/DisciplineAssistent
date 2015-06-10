@@ -17,4 +17,6 @@
     <string name="tv_start">From :</string>
     <string name="tv_finish">Until :</string>
     <string name="tv_icon">Icon : </string>
+    <string name="addplan_title">Add Plan</string>
+    <string name="btn_save">SAVE</string>
 </resources>

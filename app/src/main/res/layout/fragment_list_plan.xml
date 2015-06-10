@@ -27,13 +27,12 @@
             android:gravity="center"
             />
     </ScrollView>
-    <ImageButton
+    <ImageView
         android:id="@+id/img_add_plan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/ic_add_button"
-        android:onClick="click_add_plan"/>
+        android:src="@drawable/ic_add_button"/>
 </RelativeLayout>

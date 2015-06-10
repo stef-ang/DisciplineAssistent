@@ -50,36 +50,31 @@
                 android:layout_width="0dp"
                 android:layout_height="@dimen/priority_icon"
                 android:layout_weight="1"
-                android:src="@drawable/p1"
-                android:onClick="click_pic"/>
+                android:src="@drawable/p1"/>
             <ImageView
                 android:id="@+id/ic_p2"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/priority_icon"
                 android:layout_weight="1"
-                android:src="@drawable/p2"
-                android:onClick="click_pic"/>
+                android:src="@drawable/p2"/>
             <ImageView
                 android:id="@+id/ic_p3"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/priority_icon"
                 android:layout_weight="1"
-                android:src="@drawable/p3"
-                android:onClick="click_pic"/>
+                android:src="@drawable/p3"/>
             <ImageView
                 android:id="@+id/ic_p4"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/priority_icon"
                 android:layout_weight="1"
-                android:src="@drawable/p4"
-                android:onClick="click_pic"/>
+                android:src="@drawable/p4"/>
             <ImageView
                 android:id="@+id/ic_p5"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/priority_icon"
                 android:layout_weight="1"
-                android:src="@drawable/p5"
-                android:onClick="click_pic"/>
+                android:src="@drawable/p5"/>
         </LinearLayout>
 
         <TextView
@@ -104,50 +99,43 @@
                 android:layout_width="0dp"
                 android:layout_height="@dimen/day_icon"
                 android:layout_weight="1"
-                android:src="@drawable/d0"
-                android:onClick="click_dic"/>
+                android:src="@drawable/d0"/>
             <ImageView
                 android:id="@+id/ic_d2"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/day_icon"
                 android:layout_weight="1"
-                android:src="@drawable/d1"
-                android:onClick="click_dic"/>
+                android:src="@drawable/d1"/>
             <ImageView
                 android:id="@+id/ic_d3"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/day_icon"
                 android:layout_weight="1"
-                android:src="@drawable/d2"
-                android:onClick="click_dic"/>
+                android:src="@drawable/d2"/>
             <ImageView
                 android:id="@+id/ic_d4"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/day_icon"
                 android:layout_weight="1"
-                android:src="@drawable/d3"
-                android:onClick="click_dic"/>
+                android:src="@drawable/d3"/>
             <ImageView
                 android:id="@+id/ic_d5"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/day_icon"
                 android:layout_weight="1"
-                android:src="@drawable/d4"
-                android:onClick="click_dic"/>
+                android:src="@drawable/d4"/>
             <ImageView
                 android:id="@+id/ic_d6"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/day_icon"
                 android:layout_weight="1"
-                android:src="@drawable/d5"
-                android:onClick="click_dic"/>
+                android:src="@drawable/d5"/>
             <ImageView
                 android:id="@+id/ic_d7"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/day_icon"
                 android:layout_weight="1"
-                android:src="@drawable/d6"
-                android:onClick="click_dic"/>
+                android:src="@drawable/d6"/>
         </LinearLayout>
 
         <TextView
@@ -264,8 +252,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_left_ic"
-                android:src="@drawable/add_ic"
-                android:onClick="click_add_ic"/>
+                android:src="@drawable/add_ic"/>
         </LinearLayout>
 
         <EditText
