@@ -16,6 +16,7 @@ import android.widget.ImageView;
 
 import com.stef_developer.disciplineassistent.MainActivity;
 import com.stef_developer.disciplineassistent.R;
+import com.stef_developer.disciplineassistent.SR;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -28,6 +29,7 @@ import com.stef_developer.disciplineassistent.R;
 public class AddPlanFragment extends Fragment implements View.OnClickListener {
 
     private OnFragmentAddPlanInteractionListener mListener;
+
     private EditText et_plan_title;
     private EditText et_detail;
     private int priority;
@@ -63,6 +65,7 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        priority = -1;
         // Inflate the layout for this fragment
         fragmentView = inflater.inflate(R.layout.fragment_add_plan, container, false);
 
@@ -85,6 +88,12 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
         ic_p4 = (ImageView) fragmentView.findViewById(R.id.ic_p4);
         ic_p5 = (ImageView) fragmentView.findViewById(R.id.ic_p5);
 
+//        SR.setImgP(ic_p1, 0);
+//        SR.setImgP(ic_p2, 1);
+//        SR.setImgP(ic_p3, 2);
+//        SR.setImgP(ic_p4, 3);
+//        SR.setImgP(ic_p5, 4);
+
         ic_d1 = (ImageView) fragmentView.findViewById(R.id.ic_d1);
         ic_d2 = (ImageView) fragmentView.findViewById(R.id.ic_d2);
         ic_d3 = (ImageView) fragmentView.findViewById(R.id.ic_d3);
@@ -104,7 +113,24 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
     }
 
     private void setListener() {
-        ic_p1.setOnClickListener((AppCompatActivity) getActivity());
+        ic_p1.setOnClickListener(this);
+        ic_p2.setOnClickListener(this);
+        ic_p3.setOnClickListener(this);
+        ic_p4.setOnClickListener(this);
+        ic_p5.setOnClickListener(this);
+
+        ic_d1.setOnClickListener(this);
+        ic_d2.setOnClickListener(this);
+        ic_d3.setOnClickListener(this);
+        ic_d4.setOnClickListener(this);
+        ic_d5.setOnClickListener(this);
+        ic_d6.setOnClickListener(this);
+        ic_d7.setOnClickListener(this);
+
+        et_start.setOnClickListener(this);
+        et_finish.setOnClickListener(this);
+
+        img_add_ic.setOnClickListener(this);
     }
 
     private void setActionBar() {
@@ -140,7 +166,44 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-
+        switch (v.getId()) {
+            case R.id.ic_p1:
+                switchPriority(v.getId(), 0);
+                break;
+            case R.id.ic_p2:
+                switchPriority(v.getId(), 1);
+                break;
+            case R.id.ic_p3:
+                switchPriority(v.getId(), 2);
+                break;
+            case R.id.ic_p4:
+                switchPriority(v.getId(), 3);
+                break;
+            case R.id.ic_p5:
+                switchPriority(v.getId(), 4);
+                break;
+            case R.id.ic_d1:
+                switchDay(v.getId(), 0);
+                break;
+            case R.id.ic_d2:
+                switchDay(v.getId(), 1);
+                break;
+            case R.id.ic_d3:
+                switchDay(v.getId(), 2);
+                break;
+            case R.id.ic_d4:
+                switchDay(v.getId(), 3);
+                break;
+            case R.id.ic_d5:
+                switchDay(v.getId(), 4);
+                break;
+            case R.id.ic_d6:
+                switchDay(v.getId(), 5);
+                break;
+            case R.id.ic_d7:
+                switchDay(v.getId(), 6);
+                break;
+        }
     }
 
     @Override
@@ -167,6 +230,57 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
             editText.setFocusable(true);
             editText.setFocusableInTouchMode(true);
             this.fieldEmpty = true;
+        }
+    }
+
+    private void switchDay (int id, int p) {
+        ImageView iv_temp = (ImageView) fragmentView.findViewById(id);
+
+        if(repeat[p]) {
+            SR.setImgD(iv_temp, p);
+            repeat[p] = false;
+        }
+        else {
+            SR.setImgDSelected(iv_temp, p);
+            repeat[p] = true;
+        }
+    }
+
+    private void switchPriority (int id, int p) {
+        ImageView iv_temp = (ImageView) fragmentView.findViewById(id);
+
+        if (priority == -1) {
+            SR.setImgPSelected(iv_temp, p);
+            priority = p;
+        }
+        else if (priority == p) {
+            SR.setImgP(iv_temp, p);
+            priority = -1;
+        }
+        else if (priority == 0) {
+            SR.setImgPSelected(iv_temp, p);
+            SR.setImgP(ic_p1, priority);
+            priority = p;
+        }
+        else if (priority == 1) {
+            SR.setImgPSelected(iv_temp, p);
+            SR.setImgP(ic_p2, priority);
+            priority = p;
+        }
+        else if (priority == 2) {
+            SR.setImgPSelected(iv_temp, p);
+            SR.setImgP(ic_p3, priority);
+            priority = p;
+        }
+        else if (priority == 3) {
+            SR.setImgPSelected(iv_temp, p);
+            SR.setImgP(ic_p4, priority);
+            priority = p;
+        }
+        else if (priority == 4) {
+            SR.setImgPSelected(iv_temp, p);
+            SR.setImgP(ic_p5, priority);
+            priority = p;
         }
     }
 

@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction().
                     add(R.id.fragment, new ListPlanFragment()).
                     commit();
-            setListPlanAB();
+//            setListPlanAB();
         }
     }
 
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity
         fragmentManager.beginTransaction()
                 .add(R.id.fragment, new ListPlanFragment())
                 .commit();
-        setListPlanAB();
+//        setListPlanAB();
     }
 
     @Override
@@ -58,16 +58,16 @@ public class MainActivity extends AppCompatActivity
                 addToBackStack("").commit();
     }
 
-    public void setListPlanAB() {
-        final ActionBar mActionBar = getSupportActionBar();
-        mActionBar.setDisplayShowHomeEnabled(false);
-        mActionBar.setDisplayShowTitleEnabled(false);
-
-        LayoutInflater mInfalter = LayoutInflater.from(this);
-
-        View mCustomView = mInfalter.inflate(R.layout.listplan_actionbar, null);
-        // litener icon chart dan info ntar tarruh sini
-        mActionBar.setCustomView(mCustomView);
-        mActionBar.setDisplayShowCustomEnabled(true);
-    }
+//    public void setListPlanAB() {
+//        final ActionBar mActionBar = getSupportActionBar();
+//        mActionBar.setDisplayShowHomeEnabled(false);
+//        mActionBar.setDisplayShowTitleEnabled(false);
+//
+//        LayoutInflater mInfalter = LayoutInflater.from(this);
+//
+//        View mCustomView = mInfalter.inflate(R.layout.listplan_actionbar, null);
+//        // litener icon chart dan info ntar tarruh sini
+//        mActionBar.setCustomView(mCustomView);
+//        mActionBar.setDisplayShowCustomEnabled(true);
+//    }
 }

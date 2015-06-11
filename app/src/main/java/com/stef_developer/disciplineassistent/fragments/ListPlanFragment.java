@@ -4,6 +4,8 @@ import android.app.Activity;
 //import android.app.Fragment;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -31,6 +33,8 @@ public class ListPlanFragment extends Fragment {
 
         fragmentView = inflater.inflate(R.layout.fragment_list_plan, container, false);
 
+        setActionBar();
+
         img_add = (ImageView) fragmentView.findViewById(R.id.img_add_plan);
         img_add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +46,19 @@ public class ListPlanFragment extends Fragment {
         });
 
         return fragmentView;
+    }
+
+    private void setActionBar() {
+        final ActionBar mActionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+        mActionBar.setDisplayShowHomeEnabled(false);
+        mActionBar.setDisplayShowTitleEnabled(false);
+
+        LayoutInflater mInfalter = LayoutInflater.from(getActivity());
+
+        View mCustomView = mInfalter.inflate(R.layout.listplan_actionbar, null);
+        // litener icon chart dan info ntar tarruh sini
+        mActionBar.setCustomView(mCustomView);
+        mActionBar.setDisplayShowCustomEnabled(true);
     }
 
     @Override
