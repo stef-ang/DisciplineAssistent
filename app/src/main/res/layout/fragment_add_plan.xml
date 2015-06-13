@@ -176,7 +176,7 @@
             android:orientation="horizontal"
             android:layout_below="@id/tv_for"
             android:layout_marginLeft="@dimen/margin_left_font_normal"
-            android:layout_marginTop="@dimen/margin_top_view_add_plan">
+            android:layout_marginTop="@dimen/margin_top_view_add_plan3">
             <LinearLayout
                 android:id="@+id/ll_start"
                 android:layout_width="0dp"
@@ -194,8 +194,9 @@
                     android:id="@+id/et_start"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/fontsize_normal"
+                    android:textSize="@dimen/fontsize_normal2"
                     android:textStyle="bold"
+                    android:focusable="false"
                     android:gravity="right"
                     android:drawableRight="@drawable/ic_clock"/>
             </LinearLayout>
@@ -216,8 +217,9 @@
                     android:id="@+id/et_finish"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/fontsize_normal"
+                    android:textSize="@dimen/fontsize_normal2"
                     android:textStyle="bold"
+                    android:focusable="false"
                     android:gravity="right"
                     android:drawableRight="@drawable/ic_clock"/>
             </LinearLayout>

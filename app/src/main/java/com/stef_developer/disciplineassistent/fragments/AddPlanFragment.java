@@ -2,6 +2,7 @@ package com.stef_developer.disciplineassistent.fragments;
 
 //import android.app.ActionBar;
 import android.app.Activity;
+import android.app.Dialog;
 import android.os.Bundle;
 //import android.app.Fragment;
 import android.support.v4.app.Fragment;
@@ -13,10 +14,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.stef_developer.disciplineassistent.MainActivity;
 import com.stef_developer.disciplineassistent.R;
+import com.stef_developer.disciplineassistent.RA;
 import com.stef_developer.disciplineassistent.SR;
+import com.stef_developer.disciplineassistent.view.TimePickerFragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -43,6 +48,8 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
     private int icon;
     private ImageView img_add_ic;
     private EditText et_reward;
+
+    private int iconNow;
 
     private boolean fieldEmpty;
 
@@ -203,6 +210,15 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
             case R.id.ic_d7:
                 switchDay(v.getId(), 6);
                 break;
+            case R.id.et_start:
+            case R.id.et_finish:
+                TimePickerFragment newFragment = new TimePickerFragment();
+                newFragment.setEditText((EditText) v);
+                newFragment.show(((AppCompatActivity) getActivity()).getFragmentManager(), "timepicker");
+                break;
+            case R.id.img_add_ic:
+                showDialogIcon();
+                break;
         }
     }
 
@@ -282,6 +298,32 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
             SR.setImgP(ic_p5, priority);
             priority = p;
         }
+    }
+
+    private void showDialogIcon () {
+        iconNow = -1;
+        final Dialog dialog = new Dialog(getActivity());
+        dialog.setContentView(R.layout.dialog_add_icon);
+
+//        TextView tv = (TextView) dialog.findViewById(R.id.tv_dialog_title);
+//        tv.setText(RA.lActivity.size() + "");
+        LinearLayout ll_container = (LinearLayout) dialog.findViewById(R.id.ll_icon_container);
+
+        for(int i = 0; i < RA.lActivity.size(); i++) {
+            ImageView img_ic = new ImageView(getActivity());
+            img_ic.setImageResource(RA.lActivity.get(i));
+            ll_container.addView(img_ic);
+        }
+
+        Button btn_oke = (Button) dialog.findViewById(R.id.btn_dialog_ok);
+        btn_oke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
     }
 
     public interface OnFragmentAddPlanInteractionListener {

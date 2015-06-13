@@ -6,15 +6,7 @@ package com.stef_developer.disciplineassistent;
 //import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 
 import com.stef_developer.disciplineassistent.fragments.AddPlanFragment;
 import com.stef_developer.disciplineassistent.fragments.ListPlanFragment;
@@ -24,9 +16,6 @@ public class MainActivity extends AppCompatActivity
         ListPlanFragment.OnFragmentListPlanInteractionListener {
 
     private FragmentManager fragmentManager;
-//    private MenuInflater menuInflater;
-//    private Menu menu;
-//    private boolean SHOW_MENU = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +27,6 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction().
                     add(R.id.fragment, new ListPlanFragment()).
                     commit();
-//            setListPlanAB();
         }
     }
 
@@ -48,7 +36,6 @@ public class MainActivity extends AppCompatActivity
         fragmentManager.beginTransaction()
                 .add(R.id.fragment, new ListPlanFragment())
                 .commit();
-//        setListPlanAB();
     }
 
     @Override
@@ -58,16 +45,4 @@ public class MainActivity extends AppCompatActivity
                 addToBackStack("").commit();
     }
 
-//    public void setListPlanAB() {
-//        final ActionBar mActionBar = getSupportActionBar();
-//        mActionBar.setDisplayShowHomeEnabled(false);
-//        mActionBar.setDisplayShowTitleEnabled(false);
-//
-//        LayoutInflater mInfalter = LayoutInflater.from(this);
-//
-//        View mCustomView = mInfalter.inflate(R.layout.listplan_actionbar, null);
-//        // litener icon chart dan info ntar tarruh sini
-//        mActionBar.setCustomView(mCustomView);
-//        mActionBar.setDisplayShowCustomEnabled(true);
-//    }
 }
