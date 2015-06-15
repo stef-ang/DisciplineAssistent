@@ -7,7 +7,7 @@
     <dimen name="activity_vertical_margin_frag">15dp</dimen>
 
     <dimen name="fontsize_normal">18sp</dimen>
-    <dimen name="fontsize_normal2">22sp</dimen>
+    <dimen name="fontsize_normal2">20sp</dimen>
     <dimen name="fontsize_title">25sp</dimen>
 
     <dimen name="margin_left_font_normal">8dp</dimen>

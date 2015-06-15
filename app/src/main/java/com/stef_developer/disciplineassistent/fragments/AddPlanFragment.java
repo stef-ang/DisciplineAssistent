@@ -11,17 +11,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.stef_developer.disciplineassistent.MainActivity;
 import com.stef_developer.disciplineassistent.R;
 import com.stef_developer.disciplineassistent.RA;
 import com.stef_developer.disciplineassistent.SR;
+import com.stef_developer.disciplineassistent.adapter.ImageAdapter;
+import com.stef_developer.disciplineassistent.database.PlanDAO;
+import com.stef_developer.disciplineassistent.database.Plan_DayDAO;
+import com.stef_developer.disciplineassistent.table_objects.Plan;
+import com.stef_developer.disciplineassistent.table_objects.Plan_Day;
 import com.stef_developer.disciplineassistent.view.TimePickerFragment;
+
+import java.util.Calendar;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -38,18 +46,20 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
     private EditText et_plan_title;
     private EditText et_detail;
     private int priority;
+    private TextView tv_priority;
     private ImageView ic_p1, ic_p2, ic_p3, ic_p4, ic_p5;
     private boolean[] repeat = {false, false, false, false, false, false, false}; // minggu, senin, selasa, dst
+    private TextView tv_day;
     private ImageView ic_d1, ic_d2, ic_d3, ic_d4, ic_d5, ic_d6, ic_d7;
     private EditText et_for_numb;
     private EditText et_start;
     private EditText et_finish;
     private EditText et_motivation;
-    private int icon;
+    private int iconNow;
     private ImageView img_add_ic;
     private EditText et_reward;
 
-    private int iconNow;
+    private ImageView imgIconNow;
 
     private boolean fieldEmpty;
 
@@ -89,6 +99,8 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
         et_plan_title = (EditText) fragmentView.findViewById(R.id.et_plan_title);
         et_detail = (EditText) fragmentView.findViewById(R.id.et_details);
 
+        tv_priority = (TextView) fragmentView.findViewById(R.id.tv_priority);
+
         ic_p1 = (ImageView) fragmentView.findViewById(R.id.ic_p1);
         ic_p2 = (ImageView) fragmentView.findViewById(R.id.ic_p2);
         ic_p3 = (ImageView) fragmentView.findViewById(R.id.ic_p3);
@@ -100,6 +112,8 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
 //        SR.setImgP(ic_p3, 2);
 //        SR.setImgP(ic_p4, 3);
 //        SR.setImgP(ic_p5, 4);
+
+        tv_day = (TextView) fragmentView.findViewById(R.id.tv_day);
 
         ic_d1 = (ImageView) fragmentView.findViewById(R.id.ic_d1);
         ic_d2 = (ImageView) fragmentView.findViewById(R.id.ic_d2);
@@ -153,7 +167,62 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
         btn_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                fieldEmpty = false;
 
+                checkETEmpty(et_plan_title, "Please fill Plan Title field!");
+                checkPriorityEmpty();
+                checkDayEmpty();
+                checkETEmpty(et_for_numb, "Please fill total event field!");
+                checkETEmpty(et_start, "Please fill start time field!");
+                checkETEmpty(et_finish, "Please fill end time field!");
+                checkETEmpty(et_motivation, "Please fill Motivation field!");
+
+                if(!fieldEmpty) {
+                    Plan plan = new Plan(Calendar.getInstance().getTime());
+                    try {
+                        plan.setTitle(et_plan_title.getText().toString());
+                        plan.setDetail(et_detail.getText().toString());
+                        plan.setPriority(priority);
+                        plan.setFor_periode(Integer.parseInt(et_for_numb.getText().toString()));
+                        plan.setStart(et_start.getText().toString());
+                        plan.setFinish(et_finish.getText().toString());
+                        plan.setMotivation(et_motivation.getText().toString());
+                        plan.setIcon(iconNow);
+                        plan.setReward(et_reward.getText().toString());
+                        plan.setAct_left(Integer.parseInt(et_for_numb.getText().toString()));
+                        plan.setSuccess(0);
+                        plan.setFail(0);
+                    }
+                    catch (Exception e) {
+                        Toast.makeText(getActivity().getApplicationContext(),
+                                "Please fill columns correctly!",
+                                Toast.LENGTH_LONG).show();
+                        return;
+                    }
+
+                    try {
+                        PlanDAO planDAO = new PlanDAO(getActivity());
+                        int planId = (int) planDAO.insert(plan);
+                        if (planId != -1) {
+                            for(int i = 0; i < repeat.length; i++) {
+                                if(repeat[i]) {
+                                    Plan_Day plan_day = new Plan_Day(i, planId);
+                                    Plan_DayDAO planDayDAO = new Plan_DayDAO(getActivity());
+                                    planDayDAO.insert(plan_day);
+                                }
+                            }
+                            Toast.makeText(getActivity().getApplicationContext(),
+                                    "Add plan success! (" + planId + ")",
+                                    Toast.LENGTH_LONG).show();
+                            if (mListener != null) {
+                                mListener.onClickToBack();
+                            }
+                        }
+                    }
+                    catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
             }
         });
 
@@ -239,12 +308,36 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
         mListener = null;
     }
 
-    private void checkEmpty(EditText editText, String errorMessage) {
+    private void checkETEmpty(EditText editText, String errorMessage) {
         int length = editText.getText().toString().length();
         if(length == 0) {
             editText.setError(errorMessage);
             editText.setFocusable(true);
             editText.setFocusableInTouchMode(true);
+            this.fieldEmpty = true;
+        }
+    }
+
+    private void checkPriorityEmpty() {
+        if(priority == -1) {
+            tv_priority.setError("Please choose priority level!");
+            tv_priority.setFocusable(true);
+            tv_priority.setFocusableInTouchMode(true);
+            this.fieldEmpty = true;
+        }
+    }
+
+    private void checkDayEmpty() {
+        int count = 0;
+        for(int i = 0; i < repeat.length; i++) {
+            if(repeat[i]) {
+                count++;
+            }
+        }
+        if(count == 0) {
+            tv_day.setError("Please choose the day!");
+            tv_day.setFocusable(true);
+            tv_day.setFocusableInTouchMode(true);
             this.fieldEmpty = true;
         }
     }
@@ -302,23 +395,46 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
 
     private void showDialogIcon () {
         iconNow = -1;
+        imgIconNow = null;
         final Dialog dialog = new Dialog(getActivity());
         dialog.setContentView(R.layout.dialog_add_icon);
+        dialog.setTitle(R.string.choose_ic);
 
-//        TextView tv = (TextView) dialog.findViewById(R.id.tv_dialog_title);
-//        tv.setText(RA.lActivity.size() + "");
-        LinearLayout ll_container = (LinearLayout) dialog.findViewById(R.id.ll_icon_container);
+        GridView gv_container = (GridView) dialog.findViewById(R.id.gv_icon_container);
+        gv_container.setAdapter(new ImageAdapter(getActivity()));
 
-        for(int i = 0; i < RA.lActivity.size(); i++) {
-            ImageView img_ic = new ImageView(getActivity());
-            img_ic.setImageResource(RA.lActivity.get(i));
-            ll_container.addView(img_ic);
-        }
+        gv_container.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                ImageView imgSelected;
+                if (iconNow == -1) {
+                    imgSelected = (ImageView) v;
+                    imgSelected.setBackgroundResource(R.color.background_icon);
+                    imgIconNow = imgSelected;
+                    iconNow = position;
+                } else if (iconNow == position) {
+                    imgSelected = (ImageView) v;
+                    imgSelected.setBackgroundResource(R.color.transparent);
+                    imgIconNow = null;
+                    iconNow = -1;
+                }
+                if (iconNow > -1) {
+                    imgIconNow.setBackgroundResource(R.color.transparent);
+                    imgSelected = (ImageView) v;
+                    imgSelected.setBackgroundResource(R.color.background_icon);
+                    imgIconNow = imgSelected;
+                    iconNow = position;
+                }
+            }
+        });
+
 
         Button btn_oke = (Button) dialog.findViewById(R.id.btn_dialog_ok);
         btn_oke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(iconNow > -1) {
+                    img_add_ic.setImageResource(RA.lActivity.get(iconNow));
+                }
                 dialog.dismiss();
             }
         });

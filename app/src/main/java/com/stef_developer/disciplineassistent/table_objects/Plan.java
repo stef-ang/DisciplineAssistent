@@ -14,12 +14,12 @@ public class Plan implements Parcelable {
     private int id;
     private String title;
     private String detail;
-    private String priority;
+    private int priority;
     private int for_periode;
     private String start;
     private String finish;
     private String motivation;
-    private String icon;
+    private int icon;
     private String reward;
     private Date date_create;
     private int act_left;
@@ -40,12 +40,12 @@ public class Plan implements Parcelable {
         this.id = in.readInt();
         this.title = in.readString();
         this.detail = in.readString();
-        this.priority = in.readString();
+        this.priority = in.readInt();
         this.for_periode = in.readInt();
         this.start = in.readString();
         this.finish = in.readString();
         this.motivation = in.readString();
-        this.icon = in.readString();
+        this.icon = in.readInt();
         this.reward = in.readString();
         this.date_create = new Date(in.readLong());
         this.act_left = in.readInt();
@@ -77,11 +77,11 @@ public class Plan implements Parcelable {
         this.detail = detail;
     }
 
-    public String getPriority() {
+    public int getPriority() {
         return priority;
     }
 
-    public void setPriority(String priority) {
+    public void setPriority(int priority) {
         this.priority = priority;
     }
 
@@ -117,11 +117,11 @@ public class Plan implements Parcelable {
         this.motivation = motivation;
     }
 
-    public String getIcon() {
+    public int getIcon() {
         return icon;
     }
 
-    public void setIcon(String icon) {
+    public void setIcon(int icon) {
         this.icon = icon;
     }
 
@@ -180,12 +180,12 @@ public class Plan implements Parcelable {
         dest.writeInt(getId());
         dest.writeString(getTitle());
         dest.writeString(getDetail());
-        dest.writeString(getPriority());
+        dest.writeInt(getPriority());
         dest.writeInt(getFor_periode());
         dest.writeString(getStart());
         dest.writeString(getFinish());
         dest.writeString(getMotivation());
-        dest.writeString(getIcon());
+        dest.writeInt(getIcon());
         dest.writeString(getReward());
         dest.writeLong(getDate_create().getTime());
         dest.writeInt(getAct_left());
