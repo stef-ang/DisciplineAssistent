@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 
+import com.stef_developer.disciplineassistent.database.DayDAO;
 import com.stef_developer.disciplineassistent.fragments.AddPlanFragment;
 import com.stef_developer.disciplineassistent.fragments.ListPlanFragment;
 
@@ -16,11 +17,17 @@ public class MainActivity extends AppCompatActivity
         ListPlanFragment.OnFragmentListPlanInteractionListener {
 
     private FragmentManager fragmentManager;
+    private DayDAO dayDAO;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        dayDAO = new DayDAO(this);
+        if(dayDAO.getAllDays().size() == 0) {
+            dayDAO.loadDays();
+        }
 
         fragmentManager = getSupportFragmentManager();
         if (savedInstanceState == null) {
@@ -34,15 +41,14 @@ public class MainActivity extends AppCompatActivity
     public void onClickToBack() {
         fragmentManager.popBackStack();
         fragmentManager.beginTransaction()
-                .add(R.id.fragment, new ListPlanFragment())
-                .commit();
+                .replace(R.id.fragment, new ListPlanFragment()).addToBackStack("").commit();
     }
 
     @Override
     public void onClickAddButton() {
+        fragmentManager.popBackStack();
         fragmentManager.beginTransaction().
-                replace(R.id.fragment, AddPlanFragment.newInstance()).
-                addToBackStack("").commit();
+                replace(R.id.fragment, AddPlanFragment.newInstance()).addToBackStack("").commit();
     }
 
 }

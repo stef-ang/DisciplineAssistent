@@ -2,8 +2,14 @@ package com.stef_developer.disciplineassistent.database;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
+import android.provider.ContactsContract;
 
 import com.stef_developer.disciplineassistent.table_objects.Day;
+
+import java.util.ArrayList;
+
+import javax.sql.DataSource;
 
 /**
  * Created by Administrator on 6/7/2015.
@@ -24,6 +30,26 @@ public class DayDAO extends DiscAssistDBDAO {
         values.put(DataBaseHelper.DAY_NAME_ENG, day.getName_eng());
 
         return sqLiteDatabase.insert(DataBaseHelper.TABLE_DAY, null, values);
+    }
+
+    public ArrayList<Day> getAllDays() {
+        ArrayList<Day> days = new ArrayList<Day>();
+
+        Cursor cursor = sqLiteDatabase.query(DataBaseHelper.TABLE_DAY,
+                new String[] {DataBaseHelper.DAY_ID,
+                            DataBaseHelper.DAY_NAME_IND,
+                            DataBaseHelper.DAY_NAME_ENG},
+                null,
+                null,
+                null,
+                null,
+                null);
+
+        while (cursor.moveToNext()) {
+            Day day = new Day(cursor.getInt(0), cursor.getString(1), cursor.getString(2));
+            days.add(day);
+        }
+        return days;
     }
 
     public void loadDays() {

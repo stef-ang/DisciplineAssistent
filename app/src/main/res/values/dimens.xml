@@ -14,10 +14,14 @@
     <dimen name="margin_top_view_add_plan">5dp</dimen>
     <dimen name="margin_top_view_add_plan2">15dp</dimen>
     <dimen name="margin_top_view_add_plan3">10dp</dimen>
+    <dimen name="margin_bottom">5dp</dimen>
     <dimen name="priority_icon">40dp</dimen>
     <dimen name="day_icon">35dp</dimen>
     <dimen name="margin_lr_for_numb">3dp</dimen>
     <dimen name="margin_left_ic">10dp</dimen>
     <dimen name="margin_left_title">15dp</dimen>
     <dimen name="icsize_normal">24dp</dimen>
+    
+    <dimen name="radius_box">10dp</dimen>
+    <dimen name="padding_box">10dp</dimen>
 </resources>

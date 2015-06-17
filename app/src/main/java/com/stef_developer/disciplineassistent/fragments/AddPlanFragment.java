@@ -206,7 +206,7 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
                         if (planId != -1) {
                             for(int i = 0; i < repeat.length; i++) {
                                 if(repeat[i]) {
-                                    Plan_Day plan_day = new Plan_Day(i, planId);
+                                    Plan_Day plan_day = new Plan_Day(planId, i);
                                     Plan_DayDAO planDayDAO = new Plan_DayDAO(getActivity());
                                     planDayDAO.insert(plan_day);
                                 }

@@ -2,11 +2,13 @@ package com.stef_developer.disciplineassistent.database;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.util.Log;
 
 import com.stef_developer.disciplineassistent.table_objects.Plan;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Locale;
 
 /**
@@ -66,4 +68,35 @@ public class PlanDAO extends DiscAssistDBDAO {
     public int delete(Plan plan) {
         return sqLiteDatabase.delete(DataBaseHelper.TABLE_PLAN, WHERE_ID_EQUALS, new String[] {String.valueOf(plan.getId())});
     }
+
+    public ArrayList<Plan> getAllPlans() {
+        ArrayList<Plan> plans = new ArrayList<Plan>();
+
+        Cursor cursor = sqLiteDatabase.query(DataBaseHelper.TABLE_PLAN,
+                new String[] {DataBaseHelper.PLAN_ID,
+                        DataBaseHelper.PLAN_TITLE,
+                        DataBaseHelper.PLAN_PRIORITY,
+                        DataBaseHelper.PLAN_FOR,
+                        DataBaseHelper.PLAN_START,
+                        DataBaseHelper.PLAN_ICON,
+                        DataBaseHelper.PLAN_ACT_LEFT},
+                null,
+                null,
+                null,
+                null,
+                DataBaseHelper.PLAN_ACT_LEFT);
+
+        while (cursor.moveToNext()) {
+            Plan plan = new Plan();
+            plan.setId(cursor.getInt(0));
+            plan.setTitle(cursor.getString(1));
+            plan.setPriority(cursor.getInt(2));
+            plan.setFor_periode(cursor.getInt(3));
+            plan.setStart(cursor.getString(4));
+            plan.setIcon(cursor.getInt(5));
+            plan.setAct_left(cursor.getInt(6));
+            plans.add(plan);
+        }
+        return plans;
+}
 }

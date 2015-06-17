@@ -8,6 +8,7 @@ import android.text.format.DateFormat;
 import android.widget.EditText;
 import android.widget.TimePicker;
 
+import java.text.DecimalFormat;
 import java.util.Calendar;
 
 public class TimePickerFragment extends DialogFragment
@@ -25,12 +26,12 @@ public class TimePickerFragment extends DialogFragment
         int hour = c.get(Calendar.HOUR_OF_DAY);
         int minute = c.get(Calendar.MINUTE);
 
-        return new TimePickerDialog(getActivity(), this, hour, minute,
-                DateFormat.is24HourFormat(getActivity()));
+        return new TimePickerDialog(getActivity(), this, hour, minute, DateFormat.is24HourFormat(getActivity()));
     }
 
     @Override
     public void onTimeSet(TimePicker timePicker, int i, int i1) {
-        editText.setText(i + ":" + i1);
+        DecimalFormat df = new DecimalFormat("00");
+        editText.setText(df.format(i) + ":" + df.format(i1));
     }
 }

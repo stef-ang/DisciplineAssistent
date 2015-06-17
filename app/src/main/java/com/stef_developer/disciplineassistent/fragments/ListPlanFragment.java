@@ -2,6 +2,7 @@ package com.stef_developer.disciplineassistent.fragments;
 
 import android.app.Activity;
 //import android.app.Fragment;
+import android.os.AsyncTask;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
@@ -12,9 +13,15 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
 import android.widget.ImageView;
 
 import com.stef_developer.disciplineassistent.R;
+import com.stef_developer.disciplineassistent.adapter.PlanAdapter;
+import com.stef_developer.disciplineassistent.database.PlanDAO;
+import com.stef_developer.disciplineassistent.table_objects.Plan;
+
+import java.util.ArrayList;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -23,6 +30,10 @@ public class ListPlanFragment extends Fragment {
 
     private View fragmentView;
     private ImageView img_add;
+    private GridView gridView;
+    private ArrayList<Plan> plans;
+    private PlanDAO planDAO;
+    PlanAdapter planAdapter;
     private OnFragmentListPlanInteractionListener mListener;
 
     public ListPlanFragment() {
@@ -34,6 +45,22 @@ public class ListPlanFragment extends Fragment {
         fragmentView = inflater.inflate(R.layout.fragment_list_plan, container, false);
 
         setActionBar();
+
+        planDAO = new PlanDAO(getActivity());
+        plans = planDAO.getAllPlans();
+        planAdapter = new PlanAdapter(getActivity(), plans.toArray(new Plan[plans.size()]));
+        gridView = (GridView) fragmentView.findViewById(R.id.gridView);
+
+        float scalefactor = getResources().getDisplayMetrics().density * 100;
+        int number = getActivity().getWindowManager().getDefaultDisplay().getWidth();
+        int columns = (int) ((float) number / scalefactor) / 4;
+        if (columns == 0)
+            columns = 1;
+        gridView.setNumColumns(columns);
+
+        gridView.setAdapter(planAdapter);
+//        AsyncGetPlan asyncGetPlan = new AsyncGetPlan();
+//        asyncGetPlan.execute();
 
         img_add = (ImageView) fragmentView.findViewById(R.id.img_add_plan);
         img_add.setOnClickListener(new View.OnClickListener() {
@@ -90,5 +117,29 @@ public class ListPlanFragment extends Fragment {
 
     public interface OnFragmentListPlanInteractionListener {
         public void onClickAddButton();
+    }
+
+    private class AsyncGetPlan extends AsyncTask<Void, Void, ArrayList<Plan>> {
+        @Override
+        protected ArrayList<Plan> doInBackground(Void... params) {
+            ArrayList<Plan> planArrayList = planDAO.getAllPlans();
+            return planArrayList;
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<Plan> plansInput) {
+            plans = plansInput;
+            planAdapter = new PlanAdapter(getActivity(), plans.toArray(new Plan[plans.size()]));
+            gridView = (GridView) fragmentView.findViewById(R.id.gridView);
+
+            float scalefactor = getResources().getDisplayMetrics().density * 100;
+            int number = getActivity().getWindowManager().getDefaultDisplay().getWidth();
+            int columns = (int) ((float) number / scalefactor) / 4;
+            if (columns == 0)
+                columns = 1;
+            gridView.setNumColumns(columns);
+
+            gridView.setAdapter(planAdapter);
+        }
     }
 }
