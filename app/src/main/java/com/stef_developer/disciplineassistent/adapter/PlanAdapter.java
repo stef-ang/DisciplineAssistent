@@ -1,6 +1,7 @@
 package com.stef_developer.disciplineassistent.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,7 @@ import org.w3c.dom.Text;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by Stefanus Anggara on 16/06/2015.
@@ -65,7 +67,9 @@ public class PlanAdapter extends BaseAdapter {
             ImageView chart = (ImageView) grid.findViewById(R.id.img_chart);
             ImageView edit = (ImageView) grid.findViewById(R.id.img_edit);
 
-            int gradien = 64 - ((plans[position].getAct_left() / plans[position].getFor_periode()) * 64);
+            //int gradien = 64 - ((plans[position].getAct_left() / plans[position].getFor_periode()) * 64);
+            Random random = new Random();
+            int gradien = random.nextInt(64);
 
             warna_samping.setBackgroundResource(RA.lGradien.get(gradien));
             title.setText(plans[position].getTitle());
@@ -77,7 +81,15 @@ public class PlanAdapter extends BaseAdapter {
                 logo.setImageResource(RA.lActivity.get(plans[position].getIcon()));
             }
             act_left.setText(plans[position].getAct_left() + "\nActivities Left");
+            if(gradien < 41)
+                act_left.setTextColor(Color.parseColor("#000000"));
             act_left.setBackgroundResource(RA.lGradien.get(gradien));
+
+            int X = random.nextInt(7);
+            int Y = random.nextInt(24);
+            int Z = random.nextInt(60);
+            time_left.setText("Activity will be start for\n"+X+" days, "+Y+" hours, and "+Z+" minutes\nfrom now");
+
             priority.setImageResource(RA.lPrioritySelected.get(plans[position].getPriority()));
         }
         else {

@@ -8,6 +8,7 @@
 
     <dimen name="fontsize_normal">18sp</dimen>
     <dimen name="fontsize_normal2">20sp</dimen>
+    <dimen name="fontsize_normal3">16sp</dimen>
     <dimen name="fontsize_title">25sp</dimen>
 
     <dimen name="margin_left_font_normal">8dp</dimen>
@@ -17,10 +18,13 @@
     <dimen name="margin_bottom">5dp</dimen>
     <dimen name="priority_icon">40dp</dimen>
     <dimen name="day_icon">35dp</dimen>
+    <dimen name="actionbar_icon">35dp</dimen>
     <dimen name="margin_lr_for_numb">3dp</dimen>
     <dimen name="margin_left_ic">10dp</dimen>
     <dimen name="margin_left_title">15dp</dimen>
-    <dimen name="icsize_normal">24dp</dimen>
+    <dimen name="margin_left_title2">5dp</dimen>
+    <dimen name="icsize_normal">20dp</dimen>
+    <dimen name="icsize_normal2">35dp</dimen>
     
     <dimen name="radius_box">10dp</dimen>
     <dimen name="padding_box">10dp</dimen>

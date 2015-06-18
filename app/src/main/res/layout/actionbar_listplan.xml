@@ -6,7 +6,7 @@
     android:background="@color/action_bar_color_red">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:textColor="@android:color/white"
@@ -21,14 +21,14 @@
         android:layout_centerVertical="true">
         <ImageView
             android:id="@+id/img_info_ab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/actionbar_icon"
+            android:layout_height="@dimen/actionbar_icon"
             android:layout_marginRight="@dimen/margin_lr_for_numb"
-            android:src="@drawable/ic_info"/>
+            android:src="@drawable/act28"/>
         <ImageView
             android:id="@+id/img_chart_ab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/chart"/>
+            android:layout_width="@dimen/actionbar_icon"
+            android:layout_height="@dimen/actionbar_icon"
+            android:src="@drawable/act41"/>
     </LinearLayout>
 </RelativeLayout>

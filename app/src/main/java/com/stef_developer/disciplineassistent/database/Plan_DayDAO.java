@@ -12,6 +12,7 @@ import com.stef_developer.disciplineassistent.table_objects.Plan_Day;
 public class Plan_DayDAO extends DiscAssistDBDAO {
 
     private static final String WHERE_ID_EQUALS = DataBaseHelper.PLAN_DAY_ID + " = ?";
+    private static final String WHERE_ID_PLAN_EQUALS = DataBaseHelper.PLAN_ID + " = ?";
 
     public Plan_DayDAO(Context context) {
         super(context);
@@ -40,9 +41,9 @@ public class Plan_DayDAO extends DiscAssistDBDAO {
         return result;
     }
 
-    public int detele (Plan_Day plan_day) {
+    public int detele (int plan_id) {
         return sqLiteDatabase.delete(DataBaseHelper.TABLE_PLAN_DAY,
-                WHERE_ID_EQUALS,
-                new String[] { String.valueOf(plan_day.getId_p_d())});
+                WHERE_ID_PLAN_EQUALS,
+                new String[] { String.valueOf(plan_id)});
     }
 }

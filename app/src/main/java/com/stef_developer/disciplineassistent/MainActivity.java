@@ -11,10 +11,12 @@ import android.support.v7.app.AppCompatActivity;
 import com.stef_developer.disciplineassistent.database.DayDAO;
 import com.stef_developer.disciplineassistent.fragments.AddPlanFragment;
 import com.stef_developer.disciplineassistent.fragments.ListPlanFragment;
+import com.stef_developer.disciplineassistent.fragments.ViewPlanFragment;
 
 public class MainActivity extends AppCompatActivity
         implements AddPlanFragment.OnFragmentAddPlanInteractionListener,
-        ListPlanFragment.OnFragmentListPlanInteractionListener {
+        ListPlanFragment.OnFragmentListPlanInteractionListener,
+        ViewPlanFragment.OnFragmentViewPlanInteractionListener{
 
     private FragmentManager fragmentManager;
     private DayDAO dayDAO;
@@ -51,4 +53,10 @@ public class MainActivity extends AppCompatActivity
                 replace(R.id.fragment, AddPlanFragment.newInstance()).addToBackStack("").commit();
     }
 
+    @Override
+    public void onGoToViewPlanFragment(int id, String title, int icon) {
+        fragmentManager.popBackStack();
+        fragmentManager.beginTransaction().
+                replace(R.id.fragment, ViewPlanFragment.newInstance(id, title, icon)).addToBackStack("").commit();
+    }
 }

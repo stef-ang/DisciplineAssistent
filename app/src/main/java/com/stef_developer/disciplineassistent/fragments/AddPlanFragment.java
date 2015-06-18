@@ -83,13 +83,12 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         priority = -1;
+        iconNow = -1;
         // Inflate the layout for this fragment
         fragmentView = inflater.inflate(R.layout.fragment_add_plan, container, false);
 
         setActionBar();
-
         setFragmentView();
-
         setListener();
 
         return fragmentView;
@@ -106,12 +105,6 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
         ic_p3 = (ImageView) fragmentView.findViewById(R.id.ic_p3);
         ic_p4 = (ImageView) fragmentView.findViewById(R.id.ic_p4);
         ic_p5 = (ImageView) fragmentView.findViewById(R.id.ic_p5);
-
-//        SR.setImgP(ic_p1, 0);
-//        SR.setImgP(ic_p2, 1);
-//        SR.setImgP(ic_p3, 2);
-//        SR.setImgP(ic_p4, 3);
-//        SR.setImgP(ic_p5, 4);
 
         tv_day = (TextView) fragmentView.findViewById(R.id.tv_day);
 
@@ -161,7 +154,7 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
 
         LayoutInflater mInfalter = LayoutInflater.from(getActivity());
 
-        View mCustomView = mInfalter.inflate(R.layout.addplan_actionbar, null);
+        View mCustomView = mInfalter.inflate(R.layout.actionbar_addplan, null);
         // listener button savenya disini ntar
         Button btn_save = (Button) mCustomView.findViewById(R.id.btn_save);
         btn_save.setOnClickListener(new View.OnClickListener() {
@@ -187,7 +180,10 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
                         plan.setStart(et_start.getText().toString());
                         plan.setFinish(et_finish.getText().toString());
                         plan.setMotivation(et_motivation.getText().toString());
-                        plan.setIcon(iconNow);
+                        if(iconNow == -1)
+                            plan.setIcon(36);
+                        else
+                            plan.setIcon(iconNow);
                         plan.setReward(et_reward.getText().toString());
                         plan.setAct_left(Integer.parseInt(et_for_numb.getText().toString()));
                         plan.setSuccess(0);

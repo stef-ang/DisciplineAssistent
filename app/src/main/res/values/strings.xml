@@ -1,10 +1,7 @@
 <resources>
-    <string name="app_name">Discipline Assistent</string>
+    <string name="app_name">Discipline Assistant (Prototype)</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="hint_plan_title">Plan Title</string>
     <string name="hint_detail">Details</string>
@@ -19,6 +16,8 @@
     <string name="tv_icon">Icon : </string>
     <string name="addplan_title">Add Plan</string>
     <string name="btn_save">SAVE</string>
+    <string name="btn_edit">EDIT</string>
+    <string name="btn_delete">DELETE</string>
     <string name="choose_ic">Choose a Icon</string>
     <string name="btn_ok">OKE</string>
 </resources>

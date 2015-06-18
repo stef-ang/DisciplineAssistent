@@ -65,8 +65,8 @@ public class PlanDAO extends DiscAssistDBDAO {
         return result;
     }
 
-    public int delete(Plan plan) {
-        return sqLiteDatabase.delete(DataBaseHelper.TABLE_PLAN, WHERE_ID_EQUALS, new String[] {String.valueOf(plan.getId())});
+    public int delete(int id_plan) {
+        return sqLiteDatabase.delete(DataBaseHelper.TABLE_PLAN, WHERE_ID_EQUALS, new String[] {String.valueOf(id_plan)});
     }
 
     public ArrayList<Plan> getAllPlans() {

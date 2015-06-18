@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
-            android:layout_below="@+id/et_plan_title"
+            android:layout_below="@id/et_plan_title"
             android:hint="@string/hint_detail"/>
         <TextView
             android:id="@+id/tv_priority"

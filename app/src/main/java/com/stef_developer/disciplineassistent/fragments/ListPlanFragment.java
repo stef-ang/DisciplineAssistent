@@ -13,8 +13,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.stef_developer.disciplineassistent.R;
 import com.stef_developer.disciplineassistent.adapter.PlanAdapter;
@@ -59,6 +61,16 @@ public class ListPlanFragment extends Fragment {
         gridView.setNumColumns(columns);
 
         gridView.setAdapter(planAdapter);
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(mListener != null) {
+                    mListener.onGoToViewPlanFragment(plans.get(position).getId(),
+                            plans.get(position).getTitle(),
+                            plans.get(position).getIcon());
+                }
+            }
+        });
 //        AsyncGetPlan asyncGetPlan = new AsyncGetPlan();
 //        asyncGetPlan.execute();
 
@@ -82,7 +94,7 @@ public class ListPlanFragment extends Fragment {
 
         LayoutInflater mInfalter = LayoutInflater.from(getActivity());
 
-        View mCustomView = mInfalter.inflate(R.layout.listplan_actionbar, null);
+        View mCustomView = mInfalter.inflate(R.layout.actionbar_listplan, null);
         // litener icon chart dan info ntar tarruh sini
         mActionBar.setCustomView(mCustomView);
         mActionBar.setDisplayShowCustomEnabled(true);
@@ -117,6 +129,7 @@ public class ListPlanFragment extends Fragment {
 
     public interface OnFragmentListPlanInteractionListener {
         public void onClickAddButton();
+        public void onGoToViewPlanFragment(int id, String title, int icon);
     }
 
     private class AsyncGetPlan extends AsyncTask<Void, Void, ArrayList<Plan>> {
