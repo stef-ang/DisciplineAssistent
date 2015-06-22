@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Discipline Assistant (Prototype)</string>
+    <string name="app_name">Discipline Assistant</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
@@ -7,13 +7,22 @@
     <string name="hint_detail">Details</string>
     <string name="hint_motivation">Motivation</string>
     <string name="hint_reward">Reward</string>
+
+    <string name="tv_detail">Details:</string>
     <string name="tv_priority">Priority :</string>
     <string name="tv_day">Repeat :</string>
+    <string name="tv_day2">Repeat for :</string>
     <string name="tv_for">For : </string>
     <string name="tv_events"> events</string>
     <string name="tv_start">From :</string>
+    <string name="tv_start2">Time Start :</string>
     <string name="tv_finish">Until :</string>
+    <string name="tv_finish2">Time Finish:</string>
+    <string name="tv_motivation">Motivation :</string>
+    <string name="tv_reward">Reward :</string>
+    <string name="tv_report">Report :</string>
     <string name="tv_icon">Icon : </string>
+
     <string name="addplan_title">Add Plan</string>
     <string name="btn_save">SAVE</string>
     <string name="btn_edit">EDIT</string>

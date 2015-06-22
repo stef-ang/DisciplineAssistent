@@ -7,6 +7,7 @@ import android.util.Log;
 
 import com.stef_developer.disciplineassistent.table_objects.Plan;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Locale;
@@ -98,5 +99,57 @@ public class PlanDAO extends DiscAssistDBDAO {
             plans.add(plan);
         }
         return plans;
-}
+    }
+
+    public Plan getAPlan(int id) {
+        Plan plan;
+
+        Cursor cursor = sqLiteDatabase.query(DataBaseHelper.TABLE_PLAN,
+                new String[] {DataBaseHelper.PLAN_ID,
+                        DataBaseHelper.PLAN_TITLE,
+                        DataBaseHelper.PLAN_DETAIL,
+                        DataBaseHelper.PLAN_PRIORITY,
+                        DataBaseHelper.PLAN_FOR,
+                        DataBaseHelper.PLAN_START,
+                        DataBaseHelper.PLAN_FINISH,
+                        DataBaseHelper.PLAN_MOTIVATION,
+                        DataBaseHelper.PLAN_ICON,
+                        DataBaseHelper.PLAN_REWARD,
+                        DataBaseHelper.PLAN_DATE_CREATE,
+                        DataBaseHelper.PLAN_ACT_LEFT,
+                        DataBaseHelper.PLAN_SUCCESS,
+                        DataBaseHelper.PLAN_FAIL},
+                WHERE_ID_EQUALS,
+                new String[] {String.valueOf(id)},
+                null,
+                null,
+                null);
+
+        if (cursor.moveToNext()) {
+            plan = new Plan();
+            plan.setId(cursor.getInt(0));
+            plan.setTitle(cursor.getString(1));
+            plan.setDetail(cursor.getString(2));
+            plan.setPriority(cursor.getInt(3));
+            plan.setFor_periode(cursor.getInt(4));
+            plan.setStart(cursor.getString(5));
+            plan.setFinish(cursor.getString(6));
+            plan.setMotivation(cursor.getString(7));
+            plan.setIcon(cursor.getInt(8));
+            plan.setReward(cursor.getString(9));
+            try {
+                plan.setDate_create(dateFormatter.parse(cursor.getString(10)));
+            }
+            catch (ParseException e) {
+                plan.setDate_create(null);
+            }
+            plan.setAct_left(cursor.getInt(11));
+            plan.setSuccess(cursor.getInt(12));
+            plan.setFail(cursor.getInt(13));
+            return plan;
+        }
+        else {
+            return null;
+        }
+    }
 }

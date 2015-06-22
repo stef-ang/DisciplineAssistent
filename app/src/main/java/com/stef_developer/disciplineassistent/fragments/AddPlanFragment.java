@@ -22,7 +22,7 @@ import android.widget.Toast;
 import com.stef_developer.disciplineassistent.R;
 import com.stef_developer.disciplineassistent.RA;
 import com.stef_developer.disciplineassistent.SR;
-import com.stef_developer.disciplineassistent.adapter.ImageAdapter;
+import com.stef_developer.disciplineassistent.adapter.IconAdapter;
 import com.stef_developer.disciplineassistent.database.PlanDAO;
 import com.stef_developer.disciplineassistent.database.Plan_DayDAO;
 import com.stef_developer.disciplineassistent.table_objects.Plan;
@@ -397,7 +397,7 @@ public class AddPlanFragment extends Fragment implements View.OnClickListener {
         dialog.setTitle(R.string.choose_ic);
 
         GridView gv_container = (GridView) dialog.findViewById(R.id.gv_icon_container);
-        gv_container.setAdapter(new ImageAdapter(getActivity()));
+        gv_container.setAdapter(new IconAdapter(getActivity()));
 
         gv_container.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {

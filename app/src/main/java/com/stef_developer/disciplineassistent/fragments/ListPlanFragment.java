@@ -23,22 +23,31 @@ import com.stef_developer.disciplineassistent.adapter.PlanAdapter;
 import com.stef_developer.disciplineassistent.database.PlanDAO;
 import com.stef_developer.disciplineassistent.table_objects.Plan;
 
+import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
 /**
  * A placeholder fragment containing a simple view.
  */
 public class ListPlanFragment extends Fragment {
+    private AppCompatActivity appCompatActivity;
 
     private View fragmentView;
     private ImageView img_add;
     private GridView gridView;
-    private ArrayList<Plan> plans;
+    private ArrayList<Plan> plansAL;
     private PlanDAO planDAO;
     PlanAdapter planAdapter;
     private OnFragmentListPlanInteractionListener mListener;
 
     public ListPlanFragment() {
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        appCompatActivity = (AppCompatActivity) getActivity();
+        planDAO = new PlanDAO(appCompatActivity);
     }
 
     @Override
@@ -48,9 +57,6 @@ public class ListPlanFragment extends Fragment {
 
         setActionBar();
 
-        planDAO = new PlanDAO(getActivity());
-        plans = planDAO.getAllPlans();
-        planAdapter = new PlanAdapter(getActivity(), plans.toArray(new Plan[plans.size()]));
         gridView = (GridView) fragmentView.findViewById(R.id.gridView);
 
         float scalefactor = getResources().getDisplayMetrics().density * 100;
@@ -60,19 +66,19 @@ public class ListPlanFragment extends Fragment {
             columns = 1;
         gridView.setNumColumns(columns);
 
-        gridView.setAdapter(planAdapter);
+        AsyncGetPlan asyncGetPlan = new AsyncGetPlan(appCompatActivity);
+        asyncGetPlan.execute((Void) null);
+
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(mListener != null) {
-                    mListener.onGoToViewPlanFragment(plans.get(position).getId(),
-                            plans.get(position).getTitle(),
-                            plans.get(position).getIcon());
+                if (mListener != null) {
+                    mListener.onGoToViewPlanFragment(plansAL.get(position).getId(),
+                            plansAL.get(position).getTitle(),
+                            plansAL.get(position).getIcon());
                 }
             }
         });
-//        AsyncGetPlan asyncGetPlan = new AsyncGetPlan();
-//        asyncGetPlan.execute();
 
         img_add = (ImageView) fragmentView.findViewById(R.id.img_add_plan);
         img_add.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +89,8 @@ public class ListPlanFragment extends Fragment {
                 }
             }
         });
+
+        //Toast.makeText(getActivity(), scalefactor + " " + number + " " + columns, Toast.LENGTH_LONG).show();
 
         return fragmentView;
     }
@@ -133,6 +141,12 @@ public class ListPlanFragment extends Fragment {
     }
 
     private class AsyncGetPlan extends AsyncTask<Void, Void, ArrayList<Plan>> {
+        private final WeakReference<AppCompatActivity> activityWeakReference;
+
+        public AsyncGetPlan(AppCompatActivity appCompatActivity) {
+            this.activityWeakReference = new WeakReference<AppCompatActivity>(appCompatActivity);
+        }
+
         @Override
         protected ArrayList<Plan> doInBackground(Void... params) {
             ArrayList<Plan> planArrayList = planDAO.getAllPlans();
@@ -140,19 +154,19 @@ public class ListPlanFragment extends Fragment {
         }
 
         @Override
-        protected void onPostExecute(ArrayList<Plan> plansInput) {
-            plans = plansInput;
-            planAdapter = new PlanAdapter(getActivity(), plans.toArray(new Plan[plans.size()]));
-            gridView = (GridView) fragmentView.findViewById(R.id.gridView);
-
-            float scalefactor = getResources().getDisplayMetrics().density * 100;
-            int number = getActivity().getWindowManager().getDefaultDisplay().getWidth();
-            int columns = (int) ((float) number / scalefactor) / 4;
-            if (columns == 0)
-                columns = 1;
-            gridView.setNumColumns(columns);
-
-            gridView.setAdapter(planAdapter);
+        protected void onPostExecute(ArrayList<Plan> plans) {
+            if (activityWeakReference.get() != null && !activityWeakReference.get().isFinishing()) {
+                plansAL = plans;
+                if(plansAL != null) {
+                    if (plansAL.size() > 0) {
+                        planAdapter = new PlanAdapter(appCompatActivity, plans.toArray(new Plan[plans.size()]));
+                        gridView.setAdapter(planAdapter);
+                    }
+                    else {
+                        Toast.makeText(appCompatActivity, "No Plan Records", Toast.LENGTH_LONG).show();
+                    }
+                }
+            }
         }
     }
 }

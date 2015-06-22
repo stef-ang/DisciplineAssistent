@@ -57,6 +57,6 @@ public class MainActivity extends AppCompatActivity
     public void onGoToViewPlanFragment(int id, String title, int icon) {
         fragmentManager.popBackStack();
         fragmentManager.beginTransaction().
-                replace(R.id.fragment, ViewPlanFragment.newInstance(id, title, icon)).addToBackStack("").commit();
+                replace(R.id.fragment, ViewPlanFragment.newInstance(id)).addToBackStack("").commit();
     }
 }

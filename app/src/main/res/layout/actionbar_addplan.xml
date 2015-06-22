@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
     android:background="@color/action_bar_color_red">
-
+    <!--Bagaimana cara mengatur paddingnya action bar?-->
     <ImageView
         android:id="@+id/img_close"
         android:layout_width="@dimen/icsize_normal"
